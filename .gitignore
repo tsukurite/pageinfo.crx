@@ -1,0 +1,7 @@
+# node.js
+npm-debug.log
+node_modules/
+
+# build files
+pageinfo.pem
+pageinfo.zip

@@ -1,0 +1,43 @@
+{
+  "manifest_version": 2,
+  "name": "pageinfo",
+  "description": "show page info",
+  "version": "0.2.1",
+  "icons": {
+    "16": "icons/32.png",
+    "48": "icons/96.png",
+    "128": "icons/256.png"
+  },
+  "permissions": [
+    "tabs"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "browser_action": {
+    "default_icon": {
+      "19": "icons/38.png",
+      "38": "icons/76.png"
+    },
+    "default_title": "pageinfo",
+    "default_popup": "index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": [
+        "content_script.js"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "web_accessible_resources": [
+    "web_accessible_resource.js"
+  ],
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}

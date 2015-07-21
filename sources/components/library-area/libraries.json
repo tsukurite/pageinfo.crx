@@ -1,0 +1,29 @@
+[
+  {
+    "logo": {
+      "href": "http://jquery.com"
+    },
+    "library": {
+      "href": "http://jquery.com",
+      "name": "jQuery"
+    }
+  },
+  {
+    "logo": {
+      "href": "http://threejs.org"
+    },
+    "library": {
+      "href": "http://threejs.org",
+      "name": "three.js"
+    }
+  },
+  {
+    "logo": {
+      "href": "http://d3js.org"
+    },
+    "library": {
+      "href": "http://d3js.org",
+      "name": "D3.js"
+    }
+  }
+]

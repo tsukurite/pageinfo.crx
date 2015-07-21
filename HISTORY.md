@@ -1,3 +1,9 @@
+# 0.2.2 / 2015-07-21
+
+- repository move to GitHub
+- refactored sources
+- modernized development environment
+
 # 0.2.1 / 2014-08-26
 
 - fixed broken layout in library area

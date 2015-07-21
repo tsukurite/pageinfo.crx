@@ -11,7 +11,7 @@ $ npm run release
 ```
 
 This repository ignore extension-key file.
-Need extension-key file when Publish to Chrome Web Store.
+Need extension-key file when publish to Chrome Web Store.
 
 ## License
 

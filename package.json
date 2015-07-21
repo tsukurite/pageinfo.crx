@@ -6,7 +6,8 @@
     "dev": "npm ru webpack -- --devtool inline-source-map --watch",
     "min": "npm ru webpack -- --optimize-minimize",
     "release": "npm ru chrome -- --pack-extension=pageinfo --pack-extension-key=pageinfo.pem --user-data-dir=/tmp/pageinfo.crx &",
-    "webpack": "webpack --colors --progress --display-error-details"
+    "webpack": "webpack --colors --progress --display-error-details",
+    "zip": "zip -r pageinfo.zip pageinfo"
   },
   "devDependencies": {
     "babel-core": "^5.7.2",

@@ -1,9 +1,11 @@
 {
   "private": true,
   "scripts": {
+    "chrome": "/Applications/Google\\ Chrome.app/Contents/MacOS/Google\\ Chrome",
     "clean": "rimraf ./pageinfo/*.js",
     "dev": "npm ru webpack -- --devtool inline-source-map --watch",
     "min": "npm ru webpack -- --optimize-minimize",
+    "release": "npm ru chrome -- --pack-extension=pageinfo --pack-extension-key=pageinfo.pem --user-data-dir=/tmp/pageinfo.crx &",
     "webpack": "webpack --colors --progress --display-error-details"
   },
   "devDependencies": {

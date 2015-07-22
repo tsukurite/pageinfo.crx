@@ -27,8 +27,8 @@ window.addEventListener('message', function(event) {
 // inject web_accessible_resource.js to website
 let script = document.createElement('script');
 
-script.addEventListener('load', function(event) {
-  window.addEventListener('load', function(event) {
+script.addEventListener('load', function() {
+  window.addEventListener('load', function() {
     // get page info
     postMessage({ method: 'get' }, location.href);
   });

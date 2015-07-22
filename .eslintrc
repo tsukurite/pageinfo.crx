@@ -1,0 +1,33 @@
+env:
+  browser: true
+  es6: true
+
+ecmaFeatures:
+  modules: true
+
+globals:
+  log: true
+  chrome: true
+  jQuery: true
+  THREE: true
+  d3: true
+  ga: true
+  _gat: true
+
+rules:
+  comma-dangle:
+    - 2
+    - always-multiline
+  no-unused-vars:
+    - 2
+    - vars: all
+      args: none
+  quotes:
+    - 2
+    - single
+    - avoid-escape
+  strict:
+    - 2
+    - never
+
+# vim:ft=yaml:

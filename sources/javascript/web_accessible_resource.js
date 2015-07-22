@@ -13,7 +13,7 @@ let pageinfo = {
       versions: {
         jQuery: this.versions.jQuery(),
         three: this.versions.three(),
-        D3: this.versions.D3(),
+        D3: this.versions.d3(),
       },
       google: {
         analytics: this.google.analytics(),
@@ -91,7 +91,7 @@ let pageinfo = {
     /**
      * get D3.js version
      */
-    D3() {
+    d3() {
       return (typeof d3 === 'object') ? d3.version : null;
     },
 
@@ -118,13 +118,15 @@ let pageinfo = {
      * get ga.js tracking ids
      */
     ga() {
+      /*eslint-disable no-underscore-dangle*/
       return (
         typeof _gat === 'object' &&
         typeof _gat._getTrackers === 'function' &&
         Array.isArray(_gat._getTrackers())
       ) ? _gat._getTrackers().map(
         (tracker) => tracker._getAccount()
-      ): null;
+      ) : null;
+      /*eslint-enable no-underscore-dangle*/
     },
 
   },
@@ -150,7 +152,7 @@ let pageinfo = {
       let map = {},
           tags = document.querySelectorAll('meta[property^="og:"');
 
-      Array.prototype.forEach.call(tags, 
+      Array.prototype.forEach.call(tags,
         (ogp) => map[ogp.getAttribute('property')] = ogp.content
       );
 
